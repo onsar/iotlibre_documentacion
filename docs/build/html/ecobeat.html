@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ecoPower &mdash; documentación de IoE_documentacion - </title>
+  <title>ecoBeat &mdash; documentación de IoE_documentacion - </title>
   
 
   
@@ -37,8 +37,7 @@
     
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="ecoBeat" href="ecobeat.html" />
-    <link rel="prev" title="ecoRadio" href="ecoradio.html" /> 
+    <link rel="prev" title="ecoPower" href="ecopower.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,7 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura IoE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ecohub.html">ecoHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ecoradio.html">ecoRadio</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">ecoPower</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="ecopower.html">ecoPower</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ecoBeat</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#principales-caracteristicas">Principales características</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#puesta-a-punto">Puesta a punto</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#la-configuracion-en-la-instalacion">La configuración en la instalación</a></li>
@@ -99,7 +99,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ecobeat.html">ecoBeat</a></li>
 </ul>
 
             
@@ -146,13 +145,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>ecoPower</li>
+      <li>ecoBeat</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/ecopower.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/ecobeat.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,45 +164,53 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ecopower">
-<h1>ecoPower<a class="headerlink" href="#ecopower" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>ecoPower está pensado para tomar las medidas de consumo eléctrico de una vivienda o de un edificio con consumos inferiores a 30 KW. El sistema permite diferenciar varias zonas.</p>
-<p>ecoPower se puede instalar en el cuadro eléctrico principal o en cualquier otra parte que nos permita tomar datos del consumo mediante pinzas (transformadores de intensidad). En el un edificio podemos tener tantos dispositivos como sean necesarios y el servidor los integrará en la misma instalación sin necesidad de configuraciones adicionales o cambios en el Firmware. La comunicación se hace mediante Wifi por lo que no es necesario el cableado de datos al equipo solamente es preciso que esté dentro de la cobertura de la red WIFI del edificio.</p>
-<p>Para su uso no son necesarios conocimientos de informática aunque todos los desarrollos y el hardware están hechos bajo licencias libres lo que permite la modificación y mejora de las funcionalidades.</p>
-<img alt="_images/ecopower.jpg" src="_images/ecopower.jpg" />
+  <div class="section" id="ecobeat">
+<h1>ecoBeat<a class="headerlink" href="#ecobeat" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>EcoBeat es un dispositivo que mide el consumo de energía mediante pulsos. Estos pulsos se generan en dispositivos tales como contadores eléctricos, contadores de agua o contadores de gas. ecoBeat traduce los pulsos a las unidades correspondientes y los transmite vía WIFI a un servidor en Internet. Este dispositivo cumple con los estándares de Internet of Things y está especialmente diseñado para realizar mediciones de energía.</p>
+<p>EcoBeat admite longitudes del cable de medida de hasta 20 metros por lo que no es necesario que se instale cerca del contador que se quiere monitorizar.</p>
+<p>En un edificio podemos tener tantos dispositivos como sean necesarios y desde el servidor se visualizarán en la misma localización sin necesidad de configuraciones adicionales o cambiar parámetros en el Firmware.
+La comunicación se hace mediante Wifi por lo que no es necesario el cableado de datos al equipo solamente es preciso que esté dentro de la cobertura de la red WIFI del edificio.</p>
+<p>Para su uso no son necesarios conocimientos de informática, aunque todos los desarrollos y el hardware están hechos bajo licencias libres lo que permite la modificación y mejora de las funcionalidades.</p>
+<img alt="_images/ecobeat_board.png" src="_images/ecobeat_board.png" />
 <div class="section" id="principales-caracteristicas">
 <h2>Principales características<a class="headerlink" href="#principales-caracteristicas" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
-<li><p>6 entradas para sensores de corriente con salida estandar de 50 mA</p></li>
-<li><p>1 entrada de medida de voltage 200 - 440 Voltios</p></li>
-<li><p>Precisión en las medida de energía: ± 1,2%</p></li>
+<li><p>1 entrada de pulsos optica o mecánica</p></li>
+<li><p>Anulación de rebotes para pulsos mecánicos</p></li>
+<li><p>Anchura de los pulsos configurable de 0 a 100 ms</p></li>
+<li><p>Precisión en las medidas de pulsos: ± 0,1%</p></li>
 <li><p>Comunicación a Internet por WIFI local</p></li>
 <li><p>Configurable vía Web</p></li>
 <li><p>Estandard: IEEE 802.11 b/g/n</p></li>
 <li><p>Alimentación a 220 voltios de corriente alterna. Rango: 85 ~ 264VAC</p></li>
 <li><p>Montaje en carril din</p></li>
 <li><p>La PCB integra un Arduino nano con el ESP8266 12E</p></li>
-<li><p>Compatible con el servidor IoE</p></li>
+<li><p>Compatible con el servidor «Internet de la Energía”</p></li>
 </ul>
 </div>
 <div class="section" id="puesta-a-punto">
 <h2>Puesta a punto<a class="headerlink" href="#puesta-a-punto" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>La puesta a punto de EcoPower consta de dos partes:</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>La configuración en la instalación</p></li>
 <li><p>El firmware de Arduino</p></li>
 </ul>
+</div></blockquote>
 <div class="section" id="la-configuracion-en-la-instalacion">
 <h3>La configuración en la instalación<a class="headerlink" href="#la-configuracion-en-la-instalacion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>En este punto se definen los parámetros del servidor de destino y la wifi local a la que va a estar conectado el dispositivo. Con este fin, la primera vez que se ponga en servicio el ESP y siempre que no encuentre la WIFI configurada, el ESP 8266 12E creará su propio punto de acceso, su propia red WIFI . Conectandose a cualquier dirección a través de este punto de acceso nos aparecerá la página de configuración del ESP. Tengase en cuenta que una vez configurado el ESP y conectado a una red WIFI el router le asignará una única dirección IP a la que será necesario acceder para cambiar la configuración</p>
+<p>En este punto se definen los parámetros del servidor de destino y la WIFI local a la que va a estar conectado el dispositivo.
+Con este fin, la primera vez que se ponga en servicio el equipo el ESP 8266 12E creará su propio punto de acceso para su propia red WIFI. Conectándose a cualquier dirección, a través de este punto de acceso, nos aparecerá la página de configuración del ESP. Este procedimiento se pondrá en marcha también siempre que ecoBeat, no encuentre la WIFI configurada.
+Téngase en cuenta que una vez configurado el ESP y conectado a una red WIFI el router le asignará una única dirección IP a la que será necesario acceder para cambiar la configuración.</p>
+<p>En caso de que se quiera actualizar el firmware del ESP a la última versión, este se puede encontrar en el repositorio de código.</p>
 </div>
 <div class="section" id="el-firmware-de-arduino">
 <h3>El firmware de Arduino<a class="headerlink" href="#el-firmware-de-arduino" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>El firmware que que esta cargado por defecto en el arduino nano funciona correctamente para tranformadores de intensidad de 100A/50mA sin embargo, si quiere cambiar la configuración puede encontrar la última actualización del firmware en el repositorio</p>
+<p>El firmware que está cargado por defecto en el Arduino nano funciona correctamente para pulsos electrónicos y también mecánicos mayores de 40 milisegundos, si quiere cambiar la configuración puede encontrar la última actualización del firmware en este repositorio de código.</p>
 </div>
 <div class="section" id="codigo-fuente">
 <h3>Código fuente<a class="headerlink" href="#codigo-fuente" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>El código del firware y la documentación del harware se puede encontrar en <a class="reference external" href="https://github.com/iotlibre/EcoPower">repositorio</a></p>
+<p>El código del firware y la documentación del harware se puede encontrar en este <a class="reference external" href="https://github.com/iotlibre/ecoBeat">repositorio</a></p>
 </div>
 </div>
 </div>
@@ -216,10 +223,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ecobeat.html" class="btn btn-neutral float-right" title="ecoBeat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="ecoradio.html" class="btn btn-neutral float-left" title="ecoRadio" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ecopower.html" class="btn btn-neutral float-left" title="ecoPower" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
