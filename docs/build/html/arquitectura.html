@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Documentacion Iot Libre &mdash; documentación de IoE_documentacion - </title>
+  <title>Arquitectura IoE &mdash; documentación de IoE_documentacion - </title>
   
 
   
@@ -37,7 +37,8 @@
     
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Descripción general del proyecto" href="descripcion.html" /> 
+    <link rel="next" title="ecoHub" href="ecohub.html" />
+    <link rel="prev" title="Descripción general del proyecto" href="descripcion.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -51,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home" alt="Documentation Home"> IoE_documentacion
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> IoE_documentacion
           
 
           
@@ -83,9 +84,9 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="descripcion.html">Descripción general del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura IoE</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arquitectura IoE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ecohub.html">ecoHub</a></li>
 </ul>
 
@@ -102,7 +103,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">IoE_documentacion</a>
+          <a href="index.html">IoE_documentacion</a>
         
       </nav>
 
@@ -131,15 +132,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Documentacion Iot Libre</li>
+      <li>Arquitectura IoE</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/arquitectura.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -152,33 +153,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="documentacion-iot-libre">
-<h1>Documentacion Iot Libre<a class="headerlink" href="#documentacion-iot-libre" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="descripcion.html">Descripción general del proyecto</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="descripcion.html#los-dispositivos-que-recogen-la-informacion">Los dispositivos que recogen la información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="descripcion.html#la-transmision-de-la-informacion">La transmisión de la información</a></li>
-<li class="toctree-l2"><a class="reference internal" href="descripcion.html#el-procesado-y-la-transmision-de-los-datos">El procesado y la transmisión de los datos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura IoE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ecohub.html">ecoHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ecohub.html#caracteristicas-principales">Características principales</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ecohub.html#interfaces">Interfaces</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="section" id="arquitectura-ioe">
+<h1>Arquitectura IoE<a class="headerlink" href="#arquitectura-ioe" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>La arquitectura de funcionamiento de las redes de Internet de la Energía estan en tres partes:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Índice</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Índice de Módulos</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Página de Búsqueda</span></a></p></li>
+<li><p>El servidor que recopila y muestra la información de los sensores</p></li>
+<li><p>La red de WIFI a las que se conectan los dispositivos de medida con un alto grado de procesamiento</p></li>
+<li><p>La red de Radio a la que se conectan los dispositivos de bajo consumo alimentados con baterias</p></li>
 </ul>
+<img alt="_images/ioe_arquitectura.png" src="_images/ioe_arquitectura.png" />
 </div>
 
 
@@ -189,8 +172,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="descripcion.html" class="btn btn-neutral float-right" title="Descripción general del proyecto" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ecohub.html" class="btn btn-neutral float-right" title="ecoHub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="descripcion.html" class="btn btn-neutral float-left" title="Descripción general del proyecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

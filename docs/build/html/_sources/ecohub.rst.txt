@@ -1,10 +1,10 @@
 ecoHub
 ======
-EcoBub esta se instala en una Raspberry Pi y esta basado en el software de open energy monitor
+EcoHub esta se instala en una Raspberry Pi y esta basado en el software de open energy monitor
 
 La principal función de ecoHub es leer los datos recibidos desde el módulo de radio RFM69CW para darles el formato adecuado y transmitirlos al servidor de Internet de la Energía(IoE). La configuración del comportamiento de este módulo se especifica en el fichero emonhub.conf.
 
-ecoHub implementa también una serie de interfaces que pueden leer / suscribirse o enviar / publicar datos hacia y desde una multitud de servicios. 
+ecoHub implementa también una serie de interfaces que pueden leer/suscribirse o enviar/publicar datos hacia y desde una multitud de servicios. 
 
 .. image:: ./imagenes/raspberrypi.jpg
 
