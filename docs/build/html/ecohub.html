@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Índice &mdash; documentación de IoE_documentacion - </title>
+  <title>ecoHub &mdash; documentación de IoE_documentacion - </title>
   
 
   
@@ -35,8 +35,9 @@
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-    <link rel="index" title="Índice" href="#" />
-    <link rel="search" title="Búsqueda" href="search.html" /> 
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Descripción general del proyecto" href="descripcion.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,9 +83,13 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="descripcion.html">Descripción general del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ecohub.html">ecoHub</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ecoHub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#caracteristicas-principales">Características principales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interfaces">Interfaces</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -131,12 +136,14 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Índice</li>
+      <li>ecoHub</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/ecohub.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -148,11 +155,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Índice</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="ecohub">
+<h1>ecoHub<a class="headerlink" href="#ecohub" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>EcoBub esta se instala en una Raspberry Pi y esta basado en el software de open energy monitor</p>
+<p>La principal función de ecoHub es leer los datos recibidos desde el módulo de radio RFM69CW para darles el formato adecuado y transmitirlos al servidor de Internet de la Energía(IoE). La configuración del comportamiento de este módulo se especifica en el fichero emonhub.conf.</p>
+<p>ecoHub implementa también una serie de interfaces que pueden leer / suscribirse o enviar / publicar datos hacia y desde una multitud de servicios.</p>
+<img alt="_images/raspberrypi.jpg" src="_images/raspberrypi.jpg" />
+<div class="section" id="caracteristicas-principales">
+<h2>Características principales<a class="headerlink" href="#caracteristicas-principales" title="Enlazar permanentemente con este título">¶</a></h2>
+<ul class="simple">
+<li><p>Bus de publicación y subscripción de MQTT</p></li>
+<li><p>Transmisión de datos al servidor Internet de la Energía</p></li>
+<li><p>Es posible implementar varios interfaces y ampliarlos de forma dinámica</p></li>
+<li><p>Depuración de errores y revisión del comportamiento mediante logs</p></li>
+</ul>
+</div>
+<div class="section" id="interfaces">
+<h2>Interfaces<a class="headerlink" href="#interfaces" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El desarrollo de interfaces es la forma de incluir nuevos dispositivos, a través de sus protocolos, en las redes de Internet de la Energía.</p>
+<p>Los interfaces mas utilizados en ecoHub son los siguientes:</p>
+<ul class="simple">
+<li><p>EmonHubJeeInterfacer: Recibe y decodifica los datos del módulo de radio RFM69CW según la estructura de datos de JeeLabs</p></li>
+<li><p>EmonHubMqttInterfacer: Publica los datos decodificados en MQTT</p></li>
+</ul>
+<p>Otros interfaces que es posible implementar son:</p>
+<ul class="simple">
+<li><p>Direct Serial</p></li>
+<li><p>Victron Products</p></li>
+<li><p>ModBus FRONIUS Solar inverter</p></li>
+<li><p>Graphite timeseries DB</p></li>
+<li><p>SMASolar</p></li>
+</ul>
+</div>
 </div>
 
 
@@ -160,6 +194,13 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="descripcion.html" class="btn btn-neutral float-left" title="Descripción general del proyecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

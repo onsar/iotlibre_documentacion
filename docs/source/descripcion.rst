@@ -2,7 +2,7 @@ Descripción general del proyecto
 ================================
 La solución tecnológica propuesta se apoya en los principios y tecnologías del Internet de las cosas. Esta solución consta de tres partes diferenciadas: los dispositivos que recogen la información, la transmisión de esta información a Internet y el procesado de los datos recibidos. La comunicación entre estas tres partes se hace mediante protocolos abiertos cuyo uso no esta condicionado al pago de derechos y la licencia del software, usado en el proyecto, esta aprobada por la Open Source Iniciative o por la Free Software Foundation.
 
-En los siguientes apartados se describen cada una de las partes y las condiciones que han de cumplir
+En los siguientes apartados se describen cada una de las partes
 
 .. image:: ./imagenes/iot_general.jpg
 

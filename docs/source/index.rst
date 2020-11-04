@@ -12,7 +12,7 @@ Documentacion Iot Libre
 
    descripcion
    arquitectura
-   equipos
+   ecohub
 
 
 
