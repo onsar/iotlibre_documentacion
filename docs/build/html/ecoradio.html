@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Arquitectura IoE &mdash; documentación de IoE_documentacion - </title>
+  <title>ecoRadio &mdash; documentación de IoE_documentacion - </title>
   
 
   
@@ -37,8 +37,7 @@
     
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="ecoHub" href="ecohub.html" />
-    <link rel="prev" title="Descripción general del proyecto" href="descripcion.html" /> 
+    <link rel="prev" title="ecoHub" href="ecohub.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,9 +85,12 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="descripcion.html">Descripción general del proyecto</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Arquitectura IoE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arquitectura.html">Arquitectura IoE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ecohub.html">ecoHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ecoradio.html">ecoRadio</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ecoRadio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#principales-caracteristicas">Principales características</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -135,13 +137,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Arquitectura IoE</li>
+      <li>ecoRadio</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/arquitectura.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/ecoradio.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,15 +156,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="arquitectura-ioe">
-<h1>Arquitectura IoE<a class="headerlink" href="#arquitectura-ioe" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>La arquitectura de funcionamiento de las redes de Internet de la Energía estan en tres partes:</p>
+  <div class="section" id="ecoradio">
+<h1>ecoRadio<a class="headerlink" href="#ecoradio" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El equipo de radio esta diseñado para medir parámetros como son la temperatura, la humedad o la energía en ubicaciones donde es difícil disponer de suministro de energía eléctrica.</p>
+<p>La alimentación de este dispositivo se hace mediante pilas del tipo AA que le dan una autonomía de mas de un año
+Por defecto puede medir Temperatura, Humedad y pulsos procedentes de un contador de gas u de otro tipo</p>
+<img alt="_images/ecoradio_board.jpg" src="_images/ecoradio_board.jpg" />
+<p>La carcasa de EcoRadio puede ser de interior o de exterior con un aislamiento IP65</p>
+<div class="section" id="principales-caracteristicas">
+<h2>Principales características<a class="headerlink" href="#principales-caracteristicas" title="Enlazar permanentemente con este título">¶</a></h2>
 <ul class="simple">
-<li><p>El servidor que recopila y muestra la información de los sensores</p></li>
-<li><p>La red de WIFI a las que se conectan los dispositivos de medida con un alto grado de procesamiento</p></li>
-<li><p>La red de Radio a la que se conectan los dispositivos de bajo consumo alimentados con baterias</p></li>
+<li><p>Sensor externo: DS18B20 external temperature sensor. See hardware wiki for connections</p></li>
+<li><p>Alimentación: 2 x AA</p></li>
+<li><p>RF Radio: RFM69CW 433Mhz</p></li>
+<li><p>Carcasa de interior y de exterior(IP65)</p></li>
+<li><p>Duración de la batería superio a dos años</p></li>
+<li><p>Rango de medida de humedad: 0-80%RH;</p></li>
+<li><p>Rango de medida de temperatura -40~125 °C</p></li>
+<li><p>Precisión Humedad +-3%RH</p></li>
+<li><p>Precisión Temperatura: +-0.4 degC</p></li>
 </ul>
-<img alt="_images/ioe_arquitectura.png" src="_images/ioe_arquitectura.png" />
+<p>Para el diseño de este dispositivo se ha tomado como base EmonTH de Open Energy Monitor</p>
+</div>
 </div>
 
 
@@ -173,10 +188,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ecohub.html" class="btn btn-neutral float-right" title="ecoHub" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="descripcion.html" class="btn btn-neutral float-left" title="Descripción general del proyecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ecohub.html" class="btn btn-neutral float-left" title="ecoHub" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
