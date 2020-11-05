@@ -163,30 +163,30 @@
             
   <div class="section" id="descripcion-general-del-proyecto">
 <h1>Descripción general del proyecto<a class="headerlink" href="#descripcion-general-del-proyecto" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>La solución tecnológica propuesta se apoya en los principios y tecnologías del Internet de las cosas. Esta solución consta de tres partes diferenciadas: los dispositivos que recogen la información, la transmisión de esta información a Internet y el procesado de los datos recibidos. La comunicación entre estas tres partes se hace mediante protocolos abiertos cuyo uso no esta condicionado al pago de derechos y la licencia del software, usado en el proyecto, esta aprobada por la Open Source Iniciative o por la Free Software Foundation.</p>
+<p>La solución tecnológica propuesta se apoya en los principios y tecnologías del <strong>Internet de las cosas</strong>. Esta solución consta de <strong>tres partes</strong> diferenciadas: los dispositivos que recogen la información, la transmisión de esta información a Internet y el procesado de los datos recibidos. La comunicación entre estas tres partes se hace mediante <strong>protocolos abiertos</strong> cuyo uso no esta condicionado al pago de derechos y la licencia del software, usado en el proyecto, esta aprobada por la Open Source Iniciative o por la Free Software Foundation.</p>
 <p>En los siguientes apartados se describen cada una de las partes</p>
 <img alt="_images/iot_general.jpg" src="_images/iot_general.jpg" />
 <div class="section" id="los-dispositivos-que-recogen-la-informacion">
 <h2>Los dispositivos que recogen la información<a class="headerlink" href="#los-dispositivos-que-recogen-la-informacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>La información del consumo de los edificios se recoge mediante diferentes tipos de sensores como pueden ser transformadores de intensidad, para la medida del consumo eléctrico, o generadores de pulsos ubicados en los contadores de agua o gas. Estos sensores se conectan a equipos electrónicos que son los traducen a medidas de consumo comprensibles como son kilovatios hora o litros.</p>
-<p>La información se transmite a Internet mediante un protocolo abierto que puede ser usado sin necesidad de compra de licencias ni pago de “royalties”. Ejemplo de estos protocolos son Restful o MQTT.</p>
-<p>La especificación de los mensajes de este protocolo se presenta junto con el resto de documentación del proyecto para que pueda ser usado en futuras ampliaciones. El objetivo es que sea posible integrar nuevos dispositivos siempre y cuando estos puedan comunicarse con el servidor utilizando el protocolo acordado</p>
+<p>La información del consumo de los edificios se recoge mediante <strong>diferentes tipos de sensores</strong> como pueden ser transformadores de intensidad, para la medida del consumo eléctrico, o generadores de pulsos ubicados en los contadores de agua o gas. Estos sensores se conectan a <strong>equipos electrónicos</strong> que son los traducen a medidas de consumo comprensibles como son kilovatios hora o litros.</p>
+<p>La información se transmite a Internet mediante un <strong>protocolo abierto</strong> que puede ser usado sin necesidad de compra de licencias ni pago de “royalties”. Ejemplo de estos protocolos son <strong>Restful o MQTT</strong>.</p>
+<p>La especificación de los mensajes de este protocolo se presenta junto con el resto de documentación del proyecto para que pueda ser usado en futuras ampliaciones. El objetivo es que sea posible integrar <strong>nuevos dispositivos</strong> siempre y cuando estos puedan comunicarse con el servidor utilizando el protocolo acordado</p>
 </div>
 <div class="section" id="la-transmision-de-la-informacion">
 <h2>La transmisión de la información<a class="headerlink" href="#la-transmision-de-la-informacion" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>Los dispositivos se comunican por WIFI a un router dedicado cuya única función es dar servicio a la red de datos de consumo y a cualquier otro sistema de sensores que pudiera ser instalado. Del router se envía a Internet usando la salida a internet del propio edificio o un modem 3G.</p>
-<p>El servidor que recibe la información esta ubicado en Internet, en lo que llamamos la nube,  y recibe la información desde los edificios previstos en el proyecto y desde otros edificios, del término municipal, que a futuro quieran integrarse en el proyecto.</p>
+<p>Los dispositivos se comunican por <strong>WIFI a un router dedicado</strong> cuya única función es dar servicio a la red de datos de consumo y a cualquier otro sistema de sensores que pudiera ser instalado. Del router se envía a Internet usando la salida a internet del <strong>propio edificio o un modem 3G</strong>.</p>
+<p>El servidor que recibe la información esta ubicado en Internet, en lo que llamamos la nube, y recibe la información desde los edificios previstos en el proyecto y desde otros edificios, del término municipal, que a futuro quieran integrarse en el proyecto.</p>
 <img alt="_images/iot_transmision.jpg" src="_images/iot_transmision.jpg" />
 </div>
 <div class="section" id="el-procesado-y-la-transmision-de-los-datos">
 <h2>El procesado y la transmisión de los datos<a class="headerlink" href="#el-procesado-y-la-transmision-de-los-datos" title="Enlazar permanentemente con este título">¶</a></h2>
-<p>El procesado de los datos se hace mediante de un proveedor de servicios en la nube.</p>
-<p>El servidor de la nube esta únicamente dedicado a proyectos de educación ambiental y ahorro energético. No esta compartido con otras redes de sensores de tal manera que los responsables de su gestión pueden ampliarlo, limitar su acceso o incluir nuevas funcionalidades sin depender de terceros. Las capacidades del servidor son suficientes para la gestión de todos los datos originados en el proyecto.</p>
-<p>La ampliación de las capacidades del servidor, en caso de que se incluyan nuevos edificios, se puede hacer de forma sencilla, mediante configuración, sin necesidad de ampliar el hardware que soporta el servidor
-Los datos se presentarán en gráficas que reflejan el consumo diario, semanal o mensual de los recursos que se miden. Estas gráficas pueden combinar varias fuentes de datos para que puedan ser comparados y que permitan la creación de informes.</p>
+<p>El procesado de los datos se hace mediante de un proveedor de servicios <strong>en la nube</strong>.</p>
+<p>El servidor de la nube esta únicamente dedicado a proyectos de <strong>educación ambiental y ahorro energético</strong>. No esta compartido con otras redes de sensores de tal manera que los responsables de su gestión pueden ampliarlo, limitar su acceso o incluir nuevas funcionalidades sin depender de terceros. Las capacidades del servidor son suficientes para la gestión de todos los datos originados en el proyecto.</p>
+<p><strong>La ampliación</strong> de las capacidades del servidor, en caso de que se incluyan nuevos edificios, se puede hacer de forma sencilla, <strong>mediante configuración</strong>, sin necesidad de ampliar el hardware que soporta el servidor
+Los datos se presentarán en <strong>gráficas que reflejan el consumo diario, semanal o mensual</strong> de los recursos que se miden. Estas gráficas pueden combinar varias fuentes de datos para que puedan ser comparados y que permitan la creación de informes.</p>
 <p>Los datos pueden ser exportados a una hoja de cálculo.</p>
-<p>Se facilitará la integración con otros sistemas informáticos externos. El acceso a la plataforma desde otras aplicaciones, ya sean desde ayuntamientos u de otras entidades, se hace a través de servicios web.</p>
-<p>El código fuente del software de este servidor se ha desarrollado bajo una licencia GPL v3.</p>
+<p>Se facilita la integración con otros sistemas informáticos externos. El <strong>acceso a la plataforma desde otras aplicaciones</strong>, ya sean desde ayuntamientos u de otras entidades, se hace a través de servicios web.</p>
+<p>El código fuente del software de este servidor se ha desarrollado bajo una <strong>licencia GPL v3</strong>.</p>
 </div>
 </div>
 
