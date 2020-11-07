@@ -1,6 +1,6 @@
 Arquitectura IoE
 ================
-La arquitectura de funcionamiento de las redes de Internet de la Energía estan en tres partes:
+La arquitectura Internet de la Energía esta dividida en tres partes:
 
 * El servidor que recopila y muestra la información de los sensores
 * La red de WIFI a las que se conectan los dispositivos de medida con un alto grado de procesamiento
