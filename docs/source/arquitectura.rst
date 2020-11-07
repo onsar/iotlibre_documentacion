@@ -10,7 +10,7 @@ La arquitectura Internet de la Energía esta dividida en tres partes:
 
 La red de Radio
 ---------------
-La componen los dispositivos que alimentados a baterías necesitan una autonomía de varios años y el concentrador que recibe la información
+La componen los dispositivos alimentados a baterías, que disponen de una autonomía de varios años, y el concentrador que recibe la información
 
 Estos dispositivos están diseñados para un consumo mínimo de energía, requisito para el cual el método de transmisión más adecuado es la radio en la banda de 433Mhz. Estos equipos transmiten con un consumo de energía muy bajo, en periodos de tiempo muy cortos, a la vez que proporcionan una probada estabilidad.
 
@@ -19,8 +19,10 @@ En una gran parte los casos, el servicio de ecoHub, está instalado sobre una Ra
 
 La red de WIFI
 --------------
+La componen los equipos que estan alimentados directamente a la red de corriente alterna y la red de WIFI que les permite enviar esta información al servidor a través Internet
 
 El servidor
 -----------
+
 
 
