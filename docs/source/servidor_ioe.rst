@@ -1,5 +1,8 @@
 El Servidor Internet de la Energía (IoE)
 ========================================
+
+.. image:: ./imagenes/server_componentes.png
+
 El servidor de IoE esta compuesto por **módulos de Software Libre** que han demostrado un alto rendimiento y estabilidad. Entre ellas esta Apache, php, MySQL, MQTT y Node-RED. El resultado es un servidor de software libre que puede competir con las mejores aplicaciones. Este servidor se ha orientado a la monitorización y transformación de magnitudes energéticas por lo que es un servidor muy especializado. De ahí su nombre **Internet de la Energía**
 
 El procesado de los datos se hace en el serviodor IoE instalado en un **proveedor de servicios en la nube**.
