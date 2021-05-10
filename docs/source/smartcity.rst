@@ -7,8 +7,10 @@ avance de las tecnologías abiertas, disponer de una infraestructura de medida y
 generación, esta al alcance de cualquier entidad pública o privada.
 
 Esta propuesta esta basada en dos líneas tecnológicas principales:
+
 * Internet de las Cosas
 * LoraWan
+
 **Internet de las cosas** permite tomar medidas de cualquier sensor y subirlo a un servidor en la nube. Actualmente IoT se esta muy extendiendo por su **fiabilidad y bajo coste**.
 
 **LoraWan** posibilita el transporte, por el aire (Wireless), de los datos a grandes distancias. Es posible alcanzar distancias de 10 Kms, y consumos de baterías muy bajos con autonomías de varios años.
@@ -19,13 +21,10 @@ La siguiente figura muestra un esquema de los elementos que componen la red:
 
 .. image:: ./imagenes/smart_arquitectura.png
 
-**Sensores**: Reciben la información y la envían a un concentrador LoraWan.
-
-**Concentrador**: Recibe la información de los sensores, que se encuentran en su área de cobertura, y la trasmite al servidor.
-
-**Servidor de Red**: Recibe toda la información la clasifica y la envía al servicio que le corresponde.
-
-**Servidor de aplicaciones**: Puede compartir servidor con el “network server”. En este servidor residen las aplicaciones concretas como puede ser el control de riegos, seguimiento de ganado, parking y otras
+* **Sensores**: Reciben la información y la envían a un concentrador LoraWan.
+* **Concentrador**: Recibe la información de los sensores, que se encuentran en su área de cobertura, y la trasmite al servidor.
+* **Servidor de Red**: Recibe toda la información la clasifica y la envía al servicio que le corresponde.
+* **Servidor de aplicaciones**: Puede compartir servidor con el network server. En este servidor residen las aplicaciones concretas como puede ser el control de riegos, seguimiento de ganado, parking y otras
 
 Las ventajas
 ------------
