@@ -19,6 +19,7 @@ Documentacion Iot Libre
    ecothermal
    ecobeat
    smartcity
+   autoconsumo
    contacto
 
 Indices and tables
