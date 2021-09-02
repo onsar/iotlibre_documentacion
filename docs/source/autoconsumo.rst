@@ -1,6 +1,13 @@
 Comunidades Energéticas
 ========================
-Se presentan dos manera de medir el la energía en una instalación solar
+
+Arquiectura
+-----------
+A continuación se presenta la arquitectura sortware de las comuidades energéticas
+
+.. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
+
+Se proponen dos soluciones para medir la energía en una instalación solar
 
 * Con un analizador de redes
 * Con un analizador y un ecoHub
@@ -16,9 +23,3 @@ Con un ecoHub
 Esta configuración proporciona, además de los datos energéticos, el detalle del estado del inversor 
 
 .. image:: ./imagenes/autoconsumo_modbus.png
-
-Arquiectura
-===========
-A continuación se presenta una visión general de la arquitectura sortware de las comuidades energéticas
-
-.. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
