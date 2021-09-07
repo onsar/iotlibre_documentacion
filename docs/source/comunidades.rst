@@ -10,7 +10,7 @@ El sistema es configurable y lo forman módulos tanto hardware como software de 
 
 Arquiectura
 -----------
-A continuación se presenta la arquitectura sortware de las comuidades energéticas
+A continuación se presenta la arquitectura software de las comunidades energéticas
 
 .. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
 
@@ -22,17 +22,19 @@ La energía consumida por el usuario se mide mediante un analizador de redes ins
 
 .. image:: ./imagenes/medida_tansformador.png
 
-**emoncms**
+**emoncms:** Desrrollado por la comunidad de "Open Energy Monitor" es una referencia y este caso es el motor de la solución.
 
-Desrrollado por la comunidad de "Open Energy Monitor" es una referencia y este caso es el motor de la solución
+**PhP:** Es el lenguaje de programación con el que se ha desarrollado emoncms. Este lenguaje tiene un rendimiento muy alto para aplicaciones web.
 
-**NodeRed**
+**NodeRed:** Permite dar flexibilidad a la solución y que esta sea fácilmente configurable para evitar modificar el código fuente de la aplicación.
 
-Permite dar flexibilidad a la solución y que esta sea facilmente configurable para evitar modificar el cófigo fuente de la aplicación.
+**JavaScript:** Las aplicaciones para móvil y para tablet funcionan con JavaScript para darle una funcionalidad dinámica incluso en entornos donde el ancho de banda es limitado.
 
-**JavaScript**
+**Medidores de Energía(E):** Son analizadores de redes con transformadores de intensidad (pinzas). Todas las maracas comerciales que cumplan con el protocolo MQTT son válidas. También pueden instalarse equipos de Open Energy Monitor que pueden integrarse de forma nativa
 
-Las aplicaciones para móvil y para tablet funcionan con JavaScript para darle una funcinalidad dinámica incluso en entornosdonde el ancho de banda es limitado.
+**OpenVPN:** La coneción al inversor se hace de forma segura mediante una VPN. Esta VPN también cumple el propósito de habilitar el acceso a la Raspberry para tareas de mantenimiento remoto.
+
+**ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Pytho, este software se instala en una Raspberry en la misma localización del inversor. 
 
 
 
