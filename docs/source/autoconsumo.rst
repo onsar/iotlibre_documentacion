@@ -1,11 +1,5 @@
-Comunidades Energéticas
-========================
-
-Arquiectura
------------
-A continuación se presenta la arquitectura sortware de las comuidades energéticas
-
-.. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
+Autoconsumo
+===========
 
 Se proponen dos soluciones para medir la energía en una instalación solar
 
