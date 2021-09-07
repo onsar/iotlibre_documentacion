@@ -20,6 +20,7 @@ Documentacion Iot Libre
    ecobeat
    smartcity
    autoconsumo
+   comunidades
    contacto
 
 Indices and tables
