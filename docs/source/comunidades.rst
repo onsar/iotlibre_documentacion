@@ -14,14 +14,6 @@ A continuación se presenta la arquitectura software de las comunidades energét
 
 .. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
 
-Los valores de energía que genera el inversor se hace con el software ecoHub instalado en una Raspberry.
-
-.. image:: ./imagenes/medida_inversor.png
-
-La energía consumida por el usuario se mide mediante un analizador de redes instalado en el cuadro del usuario.
-
-.. image:: ./imagenes/medida_tansformador.png
-
 **emoncms:** Desrrollado por la comunidad de "Open Energy Monitor" es una referencia y este caso es el motor de la solución.
 
 **PhP:** Es el lenguaje de programación con el que se ha desarrollado emoncms. Este lenguaje tiene un rendimiento muy alto para aplicaciones web.
@@ -36,5 +28,14 @@ La energía consumida por el usuario se mide mediante un analizador de redes ins
 
 **ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Pytho, este software se instala en una Raspberry en la misma localización del inversor. 
 
+Tipos de instalación
+--------------------
 
+Los valores de energía que genera el inversor se obtienen con el software ecoHub instalado en una Raspberry.
+
+.. image:: ./imagenes/medida_inversor.png
+
+La energía consumida por el usuario se mide mediante un analizador de redes instalado en el cuadro del usuario.
+
+.. image:: ./imagenes/medida_tansformador.png
 
