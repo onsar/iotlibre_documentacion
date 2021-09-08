@@ -12,19 +12,21 @@ La siguiente figura muestra un esquema funcional de todos los elementos que comp
 
 .. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
 
-**emoncms:** Desrrollado por la comunidad de "Open Energy Monitor" es una referencia en el area de de la energía y en este caso es el motor de la solución. El software se pude encontrar en .. Github: https://github.com/emoncms/emoncms
+**emoncms:** Desrrollado por la comunidad de "Open Energy Monitor" es una referencia en el area de de la energía y en este caso es el motor de la solución. El software se pude encontrar en .. `Github <https://github.com/emoncms/emoncms/>`_
 
-**PhP:** Es el lenguaje de programación con el que se ha desarrollado emoncms. Este lenguaje tiene un rendimiento muy alto para aplicaciones web. Página oficial de .. pHp: https://www.php.net/
+`Python <http://www.python.org/>`_
 
-**NodeRed:** Permite dar flexibilidad a la solución y que esta sea fácilmente configurable para evitar modificar el código fuente de la aplicación. Página oficial de .. NodeRed: https://nodered.org/
+**PhP:** Es el lenguaje de programación con el que se ha desarrollado emoncms. Este lenguaje tiene un rendimiento muy alto para aplicaciones web. Página oficial de `pHp: <https://www.php.net/>`_
 
-**JavaScript:** Las aplicaciones para móvil y para tablet funcionan con JavaScript para darle una funcionalidad dinámica incluso en entornos donde el ancho de banda es limitado. Página de JavaScript https://developer.mozilla.org/es/docs/Web/JavaScript en Mozilla
+**NodeRed:** Permite dar flexibilidad a la solución y que esta sea fácilmente configurable para evitar modificar el código fuente de la aplicación. Página oficial de `NodeRed: <https://nodered.org/>`_
+
+**JavaScript:** Las aplicaciones para móvil y para tablet funcionan con JavaScript para darle una funcionalidad dinámica incluso en entornos donde el ancho de banda es limitado. Página de `JavaScript <https://developer.mozilla.org/es/docs/Web/JavaScript/>`_ en Mozilla
 
 **Medidores de Energía(E):** Son analizadores de redes con transformadores de intensidad (pinzas). Todas las maracas comerciales que cumplan con el protocolo MQTT son válidas. También pueden instalarse equipos de Open Energy Monitor que pueden integrarse de forma nativa
 
-**OpenVPN:** La coneción al inversor se hace de forma segura mediante una VPN. Esta VPN también cumple el propósito de habilitar el acceso a la Raspberry para tareas de mantenimiento remoto.Pagina oficial de .. OpenVpn: https://openvpn.net/
+**OpenVPN:** La coneción al inversor se hace de forma segura mediante una VPN. Esta VPN también cumple el propósito de habilitar el acceso a la Raspberry para tareas de mantenimiento remoto.Pagina oficial de `OpenVpn: <https://openvpn.net/>`_
 
-**ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Python, este software se instala en una Raspberry en la misma localización del inversor. Sofware de .. ecoHub en Github: https://github.com/iotlibre/eco_modbus_tcp
+**ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Python, este software se instala en una Raspberry en la misma localización del inversor. Sofware de `ecoHub en Github: <https://github.com/iotlibre/eco_modbus_tcp/>`_
 
 Tipos de instalación
 --------------------
