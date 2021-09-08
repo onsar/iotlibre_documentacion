@@ -48,8 +48,8 @@ Cliente para móvil y tableta
 
 Existen múltiples formas de ver la información de la instalación de autoconsumo. En esta imagen se puede ver la forma mas extendida de comparar la energía producida (en el porcentaje asignado al usuario) comparándola con la energía consumida:
 
-.. image:: ./imagenes/cliente_potencia.png
+.. image:: ./imagenes/cliente_movil_potencia.jpg
 
 La siguiente gráfica muestra un resumen de los que ha ocurrido cada día
 
-.. image:: ./imagenes/cliente_historico.png
+.. image:: ./imagenes/cliente_movil_historico.jpg
