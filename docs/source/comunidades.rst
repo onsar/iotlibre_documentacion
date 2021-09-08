@@ -6,13 +6,13 @@ Esta propuesta, construida con software libre, esta diseñada para la monitoriza
 
 El sistema es configurable y lo forman módulos, tanto de hardware como de software, de tal manera que se pueden sustituir por otros mas evolucionados, si se diera el caso.
 
-Arquiectura
+Arquitectura
 -----------
 La siguiente figura muestra un esquema funcional de todos los elementos que componen la aplicación.
 
 .. image:: ./imagenes/arquitectura_autoconsumo_compartido.png
 
-**emoncms:** Desrrollado por la comunidad de "Open Energy Monitor" es una referencia en el area de de la energía y en este caso es el motor de la solución. El software se pude encontrar en .. `Github <https://github.com/emoncms/emoncms/>`_
+**emoncms:** Desarrollado por la comunidad de "Open Energy Monitor" es una referencia en el area de de la energía y en este caso es el motor de la solución. El software se pude encontrar en `Github <https://github.com/emoncms/emoncms/>`_
 
 `Python <http://www.python.org/>`_
 
@@ -20,26 +20,36 @@ La siguiente figura muestra un esquema funcional de todos los elementos que comp
 
 **NodeRed:** Permite dar flexibilidad a la solución y que esta sea fácilmente configurable para evitar modificar el código fuente de la aplicación. Página oficial de `NodeRed: <https://nodered.org/>`_
 
-**JavaScript:** Las aplicaciones para móvil y para tablet funcionan con JavaScript para darle una funcionalidad dinámica incluso en entornos donde el ancho de banda es limitado. Página de `JavaScript <https://developer.mozilla.org/es/docs/Web/JavaScript/>`_ en Mozilla
+**JavaScript:** Las aplicaciones para móvil y para tableta funcionan con JavaScript para darle una funcionalidad dinámica incluso en entornos donde el ancho de banda es limitado. Página de `JavaScript <https://developer.mozilla.org/es/docs/Web/JavaScript/>`_ en Mozilla
 
 **Medidores de Energía(E):** Son analizadores de redes con transformadores de intensidad (pinzas). Todas las maracas comerciales que cumplan con el protocolo MQTT son válidas. También pueden instalarse equipos de Open Energy Monitor que pueden integrarse de forma nativa
 
-**OpenVPN:** La coneción al inversor se hace de forma segura mediante una VPN. Esta VPN también cumple el propósito de habilitar el acceso a la Raspberry para tareas de mantenimiento remoto.Pagina oficial de `OpenVpn: <https://openvpn.net/>`_
+**OpenVpn:** La conexión al inversor se hace de forma segura mediante una VPN. Esta VPN también cumple el propósito de habilitar el acceso a la Raspberry para tareas de mantenimiento remoto.Pagina oficial de `OpenVpn: <https://openvpn.net/>`_
 
-**ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Python, este software se instala en una Raspberry en la misma localización del inversor. Sofware de `ecoHub en Github: <https://github.com/iotlibre/eco_modbus_tcp/>`_
+**ecoHub:** Es el software para conectarse al inversor mediante MODBUS y enviar la información al servidor haciendo uso del API Rest del servidor. Desarrollado en Python, este software se instala en una Raspberry en la misma localización del inversor. Software de `ecoHub en Github: <https://github.com/iotlibre/eco_modbus_tcp/>`_
 
 Tipos de instalación
 --------------------
 Además de la instalación del software de servidor que se debe hacer en un proveedor de servicios en Internet es necesario instalar equipos tanto en los edificios donde se mide el consumo de energía como en las ubicaciones donde se genera la energía:
 
-Los valores de energía que genera el inversor se obtienen con el software ecoHub instalado en una Raspberry.
+Los valores de energía que genera el inversor se obtienen con el software ecoHub instalado en una Raspberry. La siguiente figura muestra un esquema simplificado de como se haría la conexión
 
 .. image:: ./imagenes/medida_inversor.png
 
 ------------------
 
-La energía consumida por el usuario se mide mediante un analizador de redes instalado en el cuadro del usuario.
+La energía consumida por el usuario se mide mediante un analizador de redes instalado en el cuadro del edificio. La siguiente figura muestra un esquema simplificado de como se haría la conexión
 
 .. image:: ./imagenes/medida_tansformador.png
 
 
+Cliente para móvil y tableta
+---------------------------
+
+Existen múltiples formas de ver la información de la instalación de autoconsumo. En esta imagen se puede ver la forma mas extendida de comparar la energía producida (en el porcentaje asignado al usuario) comparándola con la energía consumida:
+
+.. image:: ./imagenes/cliente_potencia.png
+
+La siguiente gráfica muestra un resumen de los que ha ocurrido cada día
+
+.. image:: ./imagenes/cliente_historico.png
