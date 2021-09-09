@@ -50,5 +50,8 @@ Existen múltiples formas de ver la información de la instalación de autoconsu
 
 .. image:: ./imagenes/cliente_movil_potencia.png
 
+Estas mismas imágenes se pueden ver representadas en una tableta:
+
+.. image:: ./imagenes/cliente_tablet.png
 
 
