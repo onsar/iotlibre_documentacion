@@ -1,14 +1,14 @@
-servicios ofrecidos a las Comunidades Energéticas
+Servicios ofrecidos a las Comunidades Energéticas
 ==================================================
 Introducción
 ------------
-Las Comunidades Energéticas estan destinadas a ser un actor importante en el ecosistema energético. En esto proyecto se desarrollan los servicios que requieren estas comunidades empezando por los mas necesarios para continuar ampliando una oferta que se hará de una forma abiera y desde el marco del Software Libre
+Las Comunidades Energéticas estan destinadas a ser un actor importante en el ecosistema energético tanto nacional como internacional. En el proyecto Internet de la Energía se desarrollan los servicios que requieren estas comunidades empezando por los mas necesarios para continuar ampliando una oferta que se hará de una forma abiera en marco del Software Libre
 
 Servicios
 ---------
-**Gestión los datos que el sistema eléctrico** disponibles a través de los contadores o mediante sistemas o componentes que se puedan incorporar en las instalaciones eléctricas de los CUPS que participarán en estas iniciativas de generación y gestión de la demanda energética.
+**Gestión los datos que el sistema eléctrico** proporciona a través de la lectura de contadores a través de modems o mediante otros sistemas de medida instalados en las viviendas o empresas que componen una Comunidad Energética. También se contemplan la lectura de datos, proporcionados por las empresas distribuidoras de electricidad, mediante la conexión automática a los servidores de estas empresas. Los datos corresponden tanto a la generación como al consumo de energía
 
-**Comparativas que facilitan la toma de decisiones** para conformar acuerdos de reparto a medida que se vaya avanzando en el uso de la energía generada en las instalaciones.
+**Comparativas que facilitan la toma de decisiones** para conformar acuerdos de reparto a medida que se vaya avanzando en el uso de la energía generada en las instalaciones. Estas comparativas toman como base los datos recopilados en el servicio de gestión de datos
 
 **Una facíl interconexión con otros sistmeas** como son las aplicaciones que gestionan los flujos económicos de las Comuidades Energéticas
 
