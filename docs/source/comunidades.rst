@@ -1,8 +1,10 @@
-Comunidades Energéticas
-========================
+Propuesta tecnológica para las Comunidades Energéticas
+======================================================
 Introducción
 ------------
-Esta propuesta, construida con software libre, esta diseñada para la monitorización de los elementos que componen un autoconsumo compartido de una comunidad energética. Todos los elementos que componen esta solución se han probado y comparado con otras soluciones, también de software libre, de tal manera que lo que aquí se presenta el la mejor opción en cuanto a calidad y estabilidad. Además, este servicio esta pensado para que el coste sea reducido, intentando que pueda asumirse, sin grandes esfuerzos, como parte de la instalación.
+Esta propuesta, construida con software libre, toma como base los elementos diseñados en el Proyecto Internet de la Energía (IOE).
+
+IoE para Comunidades esta diseñada para la monitorización de los elementos que componen un autoconsumo compartido de una comunidad energética. Todos los elementos que componen esta solución se han probado y comparado con otras soluciones, también de software libre, de tal manera que lo que aquí se presenta el la mejor opción en cuanto a calidad y estabilidad. Además, este servicio esta pensado para que el coste sea reducido, intentando que pueda asumirse, sin grandes esfuerzos, como parte de la instalación.
 
 El sistema es configurable y lo forman módulos, tanto de hardware como de software, de tal manera que se pueden sustituir por otros mas evolucionados, si se diera el caso.
 
