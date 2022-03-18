@@ -16,9 +16,15 @@ Servicios
 
 **Sistema de monitorización de los datos** para que todos los actores, que forman parte de la comunidad energética, puedan disponer de la información que les corresponde teniendo en cuenta la transparencia, que deben tener estas comunidades, pero también respetando la privacidad de las personas que las componen. La monitorización desarrollada en el proyecto permite:
 
-* La visualización, por parte de cada uno de los usuarios, de los consumos y la generación de una o varias instalaciones
+* La visualización, por parte de cada uno de los usuarios, de los consumos y la generación de una o varias instalaciones. Muestra la información a las consumidoras asociadas de forma sencilla y visual. Los participantes conocen cuánto ahorra la instalación colectiva y cada una en particular, tanto en términos de energía (árboles, CO2....) cómo en dinero.
+* Revisión por parte de la persona que va a gestionar la Comunidad, comprobar las cuentas, ver qué todo se está amortizando cómo debería y comprobar que todo funciona correctamente.
 * La exposición de los datos mas relevantes en espacios públicos que posibilitan la difusión de los resultados
 * La monitorización detallada desde el centro de control de todos los elementos. Desde estos centros, y mediante un perfil avanzado, también se puede analizar y controlar los flujos energéticos en tiempo real.
+
+**Acuerdo de reparto** (pendiente de desarrollo) tanto en la etapa inicial como una vez consolidada la comunidad:
+* **Primer acuerdo** (pendiente de desarrollo) Los coeficientes de reparto, hora a hora durante todo el año, suponen 8760 coeficientes por persona que participa en una instalación colectiva, por lo que debe ser realizado con software para optimizarlo, especialmente en instalaciones con consumidores que tienen alta temporalidad (negocios que cierran fines de semana, pueblos que tienen muchas casas de fin de semana y verano, colegios, piscinas de veranos....). Además de la complejidad de este tipo de reparto, en las comunidades energéticas se pueden poner condiciones para que se haga el reparto introduciendo algunas reglas que acuerden las personas que participan con el fin de que este reparto sea más justo, aunque penalice algo la amortización económica (mínimo repartido, reserva de energía para casos de pobreza energética, máximo para que grandes consumidoras no se lleven una parte desproporcionada de la energía....).
+
+* **Revisión del acuerdo de reparto** (pendiente de desarrollo). La normativa permite revisar el acuerdo de reparto horario cada 4 meses, aunque las Comunidades pueden decidir revisarlo anualmente o cuando haya entradas/salidas de personas o diferenciales importantes sobre las estimaciones, por ejemplo. La solución definitiva será que haya un software inteligente que vaya revisando continuamente los coeficientes y ajustándolos para maximizar la eficiencia de estas instalaciones. 
 
 
 
