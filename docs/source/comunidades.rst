@@ -46,6 +46,17 @@ La energía consumida por el usuario se mide mediante un analizador de redes ins
 **Medidores de Energía(E):** Son analizadores de redes con transformadores de intensidad (pinzas). Todas las maracas comerciales que cumplen con el protocolo MQTT son válidas. También pueden instalarse equipos de Open Energy Monitor que pueden integrarse de forma nativa.
 
 
+Integración con Datadis
+-----------------------
+En las infraestructuras que cuentan con contadores de energía inteligentes la propia ditribuidora de electricidad recibe los datos de consumo (o generación) del propio contador. Estas distribuidoras ofrecen los datos a traves de una plataforma común a todas ellas: Datadis `Datadis: <https://datadis.es>`_
+
+La integración de los datos, obtenidos mediante consultas a datadis se hace de dos formas diferentes:
+
+* Tiempo real: Un programa consulta diariamente los datos disponibles y los incorpora al servidor IoE
+* Historico anual de consumos: Un script consulta los datos anuales de un usuario y los procesa para grabarlos en una base de datos
+
+En ambos casos los datos se tratan de igual manera que si procediesen de un medidor de energía.
+
 La medida de la generación
 --------------------------
 
