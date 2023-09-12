@@ -75,6 +75,10 @@ Los clientes de visualización
 
 Existen múltiples formas de ver la información de la instalación de autoconsumo. En esta imagen se puede ver la forma mas extendida de comparar la energía producida (en el porcentaje asignado al usuario) con la energía consumida:
 
+.. image:: ./imagenes/cliente_movil_potencia_v0.png
+
+Exixten varios formatos para los clientes de movíl. En la siguiete figura se puede ver un ejemplo:
+
 .. image:: ./imagenes/cliente_movil_potencia.png
 
 Estas mismas imágenes se pueden ver representadas en una tableta:
