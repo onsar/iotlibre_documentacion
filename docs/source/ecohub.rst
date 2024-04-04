@@ -1,6 +1,6 @@
 ecoHub
 ======
-ecoHub implementa también una serie de interfaces que pueden leer/suscribirse o enviar/publicar datos hacia y desde una multitud de servicios. 
+ecoHub implementa una serie de interfaces que pueden leer/suscribirse o enviar/publicar datos hacia y desde una multitud de servicios. 
 
 .. image:: ./imagenes/raspberrypi.jpg
 
