@@ -1,0 +1,3 @@
+# Ignorar los archivos generados por Sphinx
+docs/source/_build/
+
