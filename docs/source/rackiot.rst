@@ -7,7 +7,7 @@ Funcionalidades básicas:
 
 * La interconexión de varias tarjetas electrónicas. de funcionalidades distintas, a través de un mismo bus dotándolas de inteligencia mediante una”Single-Board Computer (SBC)” compatible con una Raspberry pi o similar.
 * Compatibilidad con los shields ya existentes para la familia Raspberry que se pueden incluir en el bus de comunicaciones.
-* *NodeRed como lógica de proceso con una programación visual para conectar dispositivos, APIs y servicios en flujos.
+* NodeRed como lógica de proceso con una programación visual para conectar dispositivos, APIs y servicios en flujos.
 
 ecoBus
 ------
